@@ -1,0 +1,52 @@
+<html>
+  <p ng-style="myStyle">
+    <mat-toolbar>
+      <span>My Calculator</span>
+      <span class="example-spacer"></span>
+
+      <div class="example-label">Change Background (PROTOTYPE): </div>
+      <div class="example-button-row">
+        <button mat-button style="color: red;" (click)=bgRed()>Red</button>
+        <button mat-button style="color: green;" (click)=bgGreen()>Green</button>
+        <button mat-button style="color: blue;" (click)=bgBlue()>Blue</button>
+      </div>
+
+      <p *ngIf="counter % 2 == 0">Show some love for the app
+        <button mat-icon-button class="example-icon favorite-icon" (click)="showNo()">
+          <mat-icon>favorite</mat-icon>
+        </button>
+      </p>
+
+      <p *ngIf="counter % 2 != 0">Thanks for showing love for the app
+        <button mat-icon-button class="example-icon favorite-icon" (click)="showYes()" style="color: red;">
+          <mat-icon>favorite</mat-icon>
+        </button>
+      </p>
+    </mat-toolbar>
+  </p>
+
+  <app-calculator> </app-calculator>
+
+  <br><br>
+  <h2>COMMENTS :</h2>
+  <mat-card style="background-color: rgb(59, 59, 61); border: solid;">
+    <mat-card-title>Aryan Kumar</mat-card-title>
+    <mat-card-subtitle>Beautifull app... Really useful</mat-card-subtitle>
+    <mat-card-actions>
+      <button mat-button>LIKE</button>
+      <button mat-button>SHARE</button>
+    </mat-card-actions>
+  </mat-card>
+
+  <mat-card style="background-color: rgb(59, 59, 61);; border: solid;" >
+    <mat-card-title>Yasim Malik</mat-card-title>
+    <mat-card-subtitle>Good UI</mat-card-subtitle>
+    <mat-card-actions>
+      <button mat-button>LIKE</button>
+      <button mat-button>SHARE</button>
+    </mat-card-actions>
+  </mat-card>
+
+</html>
+
+

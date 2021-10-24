@@ -1,0 +1,40 @@
+<div class="calculator">
+
+  <input type="text" class="screen" [value]="currentNumber" disabled />
+
+  <div class="row">
+    <button type="button" (click)="inputNum('1')" value="1">1</button>
+    <button (click)="inputNum('2')">2</button>
+    <button (click)="inputNum('3')">3</button>
+    <button (click)="inputOperator('+')" class="op">+</button>
+  </div>
+
+  <div class="row">
+    <button (click)="inputNum('4')">4</button>
+    <button (click)="inputNum('5')">5</button>
+    <button (click)="inputNum('6')">6</button>
+    <button (click)="inputOperator('-')">-</button>
+  </div>
+
+  <div class="row">
+    <button (click)="inputNum('7')">7</button>
+    <button (click)="inputNum('8')">8</button>
+    <button (click)="inputNum('9')">9</button>
+    <button (click)="inputOperator('*')">*</button>
+  </div>
+
+  <div class="row">
+    <button (click)="clearFunc()">C</button>
+    <button (click)="inputNum('0')">0</button>
+    <button (click)="numPoint()">.</button>
+    <button (click)="inputOperator('/')">/</button>
+  </div>
+
+  <div class="row1">
+    <button (click)="inputOperator('!')">!</button>
+    <button (click)="inputOperator('P')">P</button>
+  </div>
+
+  <div class="eq">
+    <button (click)="inputOperator('=')">=</button>
+  </div>
